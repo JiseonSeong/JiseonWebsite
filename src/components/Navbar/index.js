@@ -1,5 +1,6 @@
 import React from "react";
 import { IoMenu } from "react-icons/io5";
+import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
   NavbarContainer,
@@ -13,11 +14,16 @@ import {
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Jiseon Seong</NavLogo>
+          <NavLogo to="/" onClick={toggleHome}>
+            Jiseon Seong
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <IoMenu />
           </MobileIcon>
