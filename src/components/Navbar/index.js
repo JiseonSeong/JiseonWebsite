@@ -1,5 +1,5 @@
 import React from "react";
-import { BiUpsideDown } from "react-icons/bi";
+import { IoMenu } from "react-icons/io5";
 import {
   Nav,
   NavbarContainer,
@@ -19,7 +19,7 @@ const Navbar = ({ toggle }) => {
         <NavbarContainer>
           <NavLogo to="/">Jiseon Seong</NavLogo>
           <MobileIcon onClick={toggle}>
-            <BiUpsideDown />
+            <IoMenu />
           </MobileIcon>
           <NavMenu>
             <NavItem>
