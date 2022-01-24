@@ -57,7 +57,7 @@ export const Heading = styled.h1`
   font-size: 35px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: black;
 
   @media screen and (max-width: 480px) {
     font-size: 30px;
@@ -72,13 +72,13 @@ export const Summary = styled.p`
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
-export const ImagWrap = styled.div`
+export const ImgWrap = styled.div`
   max-width: 400px;
   height: 100%;
 `;
 
-export const Imag = styled.img`
-  width: 100%auto;
+export const Img = styled.img`
+  width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
 `;

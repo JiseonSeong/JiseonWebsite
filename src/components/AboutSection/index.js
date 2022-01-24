@@ -9,8 +9,8 @@ import {
   TextWrapper,
   Heading,
   Summary,
-  ImagWrap,
-  Imag,
+  ImgWrap,
+  Img,
 } from "./AboutElements";
 
 const AboutSection = () => {
@@ -33,9 +33,9 @@ const AboutSection = () => {
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImagWrap>
-                <Imag src="../../images/svg-1.svg" alt="myPhoto" />
-              </ImagWrap>
+              <ImgWrap>
+                <Img src="../../images/svg-1.svg" alt="myPhoto" />
+              </ImgWrap>
             </Column2>
           </AboutRow>
         </AboutWrapper>

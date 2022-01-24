@@ -3,6 +3,7 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
+import EduSection from "../components/EduSection";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,7 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <AboutSection />
+      <EduSection />
     </>
   );
 };
