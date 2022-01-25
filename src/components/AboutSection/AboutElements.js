@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutContainor = styled.div`
+export const AboutContainer = styled.div`
   color: red;
   background: ${({ bgColor }) => (bgColor ? "#f7faff" : "#f5f5f5")};
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  AboutContainor,
+  AboutContainer,
   AboutWrapper,
   AboutRow,
   Column1,
@@ -26,7 +26,7 @@ const AboutSection = (
 ) => {
   return (
     <>
-      <AboutContainor bgColor={bgColor} id={id}>
+      <AboutContainer bgColor={bgColor} id={id}>
         <AboutWrapper>
           <AboutRow imgStart={imgStart}>
             <Column1>
@@ -43,7 +43,7 @@ const AboutSection = (
             </Column2>
           </AboutRow>
         </AboutWrapper>
-      </AboutContainor>
+      </AboutContainer>
     </>
   );
 };
