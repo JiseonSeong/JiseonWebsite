@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const AboutContainor = styled.div`
-  color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  color: red;
+  background: ${({ bgColor }) => (bgColor ? "#f7faff" : "#f5f5f5")};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -26,7 +26,7 @@ export const AboutRow = styled.div`
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1` : `'col1 col2`};
+    imgStart ? `'col2 col1'` : `'col1 col2'`};
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
@@ -57,19 +57,26 @@ export const Heading = styled.h1`
   font-size: 35px;
   line-height: 1.1;
   font-weight: 600;
-  color: black;
+  color: red;
 
   @media screen and (max-width: 480px) {
     font-size: 30px;
   } ;
 `;
 
-export const Summary = styled.p`
+export const SubTitle = styled.h2`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: red;
+`;
+
+export const Content = styled.p`
+  color: red;
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 18px;
 `;
 
 export const ImgWrap = styled.div`

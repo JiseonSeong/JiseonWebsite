@@ -8,33 +8,37 @@ import {
   Column2,
   TextWrapper,
   Heading,
-  Summary,
+  SubTitle,
+  Content,
   ImgWrap,
   Img,
 } from "./AboutElements";
 
-const AboutSection = () => {
+const AboutSection = (
+  bgColor,
+  id,
+  imgStart,
+  heading,
+  subtitle,
+  content,
+  img,
+  alt
+) => {
   return (
     <>
-      <AboutContainor id="about">
+      <AboutContainor bgColor={bgColor} id={id}>
         <AboutWrapper>
-          <AboutRow imgStart="false">
+          <AboutRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <Heading>ABOUT</Heading>
-                <Summary>
-                  Recent graduate with education in Back-end development skill
-                  using C, C++, C# and Python and Embedded system with
-                  Microcontrollers and Microprocessors. Dreaming on and good
-                  hands-on experiences with Front-end development using
-                  React.js, Javascript, HTML, CSS. Highly poised and dedicated
-                  with talent in design principles and programming languages.
-                </Summary>
+                <Heading>{heading}</Heading>
+                <SubTitle>{subtitle}</SubTitle>
+                <Content>{content}</Content>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src="../../images/svg-1.svg" alt="myPhoto" />
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </AboutRow>
