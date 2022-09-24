@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  color: red;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: ${({ bgColor }) => (bgColor ? "#f7faff" : "#f5f5f5")};
 
   @media screen and (max-width: 768px) {
@@ -9,10 +13,25 @@ export const AboutContainer = styled.div`
   }
 `;
 
+export const Heading = styled.h1`
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+  font-size: 2rem;
+  /* line-height: 1.1;
+  font-weight: 600; */
+  color: #1f1f1f;
+
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+  } ;
+`;
+
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 300px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -52,35 +71,24 @@ export const TextWrapper = styled.div`
   padding-bottom: 60px;
 `;
 
-export const Heading = styled.h1`
-  margin-bottom: 24px;
-  font-size: 35px;
-  line-height: 1.1;
-  font-weight: 600;
-  color: red;
-
-  @media screen and (max-width: 480px) {
-    font-size: 30px;
-  } ;
-`;
-
 export const SubTitle = styled.h2`
   max-width: 440px;
-  margin-bottom: 35px;
+  margin-bottom: 0px;
   font-size: 18px;
+  font-weight: 500;
   line-height: 24px;
-  color: red;
+  color: #1f1f1f;
 `;
 
 export const Content = styled.p`
-  color: red;
+  color: #1f1f1f;
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 15px;
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 400px;
+  max-width: 300px;
   height: 100%;
 `;
 

@@ -14,7 +14,7 @@ import {
   Img,
 } from "./AboutElements";
 
-const AboutSection = (
+const AboutSection = ({
   bgColor,
   id,
   imgStart,
@@ -22,16 +22,16 @@ const AboutSection = (
   subtitle,
   content,
   img,
-  alt
-) => {
+  alt,
+}) => {
   return (
     <>
       <AboutContainer bgColor={bgColor} id={id}>
+        <Heading>{heading}</Heading>
         <AboutWrapper>
           <AboutRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <Heading>{heading}</Heading>
                 <SubTitle>{subtitle}</SubTitle>
                 <Content>{content}</Content>
               </TextWrapper>

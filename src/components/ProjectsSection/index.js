@@ -15,6 +15,7 @@ import {
 const ProjectsSection = () => {
   return (
     <ProjectsContainer id="projects">
+      {/* <ProjectsContainer id="projects"></ProjectsContainer> */}
       <ProjectsH1>PROJECTS</ProjectsH1>
       <ProjectsWrapper>
         <ProjectsCard>

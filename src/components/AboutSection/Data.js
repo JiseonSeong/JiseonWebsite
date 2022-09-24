@@ -3,7 +3,7 @@ export const dataObjOne = {
   bgColor: false,
   imgStart: false,
   heading: "ABOUT",
-  subtitle: "ll",
+  subtitle: "",
   content:
     "Recent graduate with education in Back-end development skill using C, C++, C# and Python and Embedded system with Microcontrollers and Microprocessors. Dreaming on and good hands-on experiences with Front-end development using React.js, Javascript, HTML, CSS. Highly poised and dedicated with talent in design principles and programming languages.",
   img: require("../../images/svg-1.svg").default,
@@ -16,8 +16,7 @@ export const dataObjTwo = {
   imgStart: true,
   heading: "EDUCATION",
   subtitle: "Computer Engineering Techology, Advanced Diploma",
-  conetent:
-    "Seneca College of Applied Arts and Technlogy - North York, Ontario",
-  img: require("../../images/svg-1.svg"),
+  content: "Seneca College of Applied Arts and Technlogy - North York, Ontario",
+  img: require("../../images/svg-1.svg").default,
   alt: "myPhoto",
 };

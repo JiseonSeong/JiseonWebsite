@@ -5,6 +5,7 @@ import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
 import Footer from "../components/Footer";
+import ProSection from "../components/ProSection";
 import { dataObjOne, dataObjTwo } from "../components/AboutSection/Data";
 
 const Home = () => {
@@ -18,9 +19,10 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <HeroSection />
+      {/* <HeroSection /> */}
       <AboutSection {...dataObjOne} />
       <AboutSection {...dataObjTwo} />
+      <ProSection />
       <ProjectsSection />
       <Footer />
     </>

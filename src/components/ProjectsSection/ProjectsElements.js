@@ -11,7 +11,7 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsH1 = styled.h1`
   font-size: 2rem;
-  color: #000;
+  color: #1f1f1f;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
